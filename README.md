@@ -48,6 +48,9 @@ We use MRR metric to evaluate the ability on text2code retrieval tasks: AdvTest,
 ![result](./resources/result.png)
 
 ## How to Use
+
+You should download model file for huggingface at first.
+
 ### Transformers
 ```
 from transformers import AutoTokenizer, AutoModel
