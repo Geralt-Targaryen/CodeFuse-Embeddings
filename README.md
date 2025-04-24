@@ -122,6 +122,7 @@ Note:
 2. Only the CodeFuse-CGE-Large model has been adapted, and support for the CodeFuse-CGE-Small model will be available soon.
 
 ## Contact us
+Email: <hyu.hugo@antgroup.com>
 
 ![CodeFuse-AI](./resources/CodeFuse-AI.png)
 
