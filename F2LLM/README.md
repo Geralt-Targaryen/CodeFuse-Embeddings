@@ -1,6 +1,10 @@
 ## F2LLM
 
-F2LLMs (Foundation-to-Feature Large Language Models) are foundation models directly finetuned on 6 million high-quality query-document pairs, striking a strong balance between model size, training cost, and embedding performance.
+F2LLMs (Foundation-to-Feature Large Language Models) are foundation models directly finetuned on 6 million high-quality query-document pairs, striking a strong balance between model size, training cost, and embedding performance:
+
+<p align="center">
+    <img src="imgs/mteb_leaderboard.png" width="700"/>
+<p>
 
 Model checkpoints are available at:
 
@@ -12,13 +16,15 @@ Training data is available at [F2LLM data](https://huggingface.co/datasets/codef
 
 ### Train
 
-To reproduce the training of F2LLMs, please:
+In this repo we provide a streamlined and efficient script for training embedding models. To reproduce the training of F2LLMs, please:
 
 - Setup environment following `requirements.txt`. We note that transformers>=4.51.0 is required for training Qwen3 models.
 - Download data and backbone models from Hugging Face (we use Qwen3 models).
 - Run `tokenize_data_qwen.py` to tokenize the downloaded data
 - Modify model path, data path, and other arguments in `configs/config.json`.
 - Start training with `accelerate launch --config_file configs/accelerate_config.yaml run.py --config configs/config.json`.
+
+Note: we recommend setting `num_processes` to 1 in `configs/accelerate_config.yaml` and launch the training code once to generate cache for training data before starting the actual training.
 
 For multi-node training, run on the main node:
 
