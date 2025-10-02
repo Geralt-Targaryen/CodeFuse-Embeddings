@@ -3,10 +3,16 @@
 F2LLMs (Foundation-to-Feature Large Language Models) are foundation models directly finetuned on 6 million high-quality query-document pairs, striking a strong balance between model size, training cost, and embedding performance:
 
 <p align="center">
+    <img src="imgs/overview.png" width="700"/>
+<p>
+
+On the MTEB leaderboard, F2LLM-4B ranks 2nd among models of ~4B size, and 7th overall, while F2LLM-1.7B ranks 1st among models of 1B-2B size.
+
+<p align="center">
     <img src="imgs/mteb_leaderboard.png" width="700"/>
 <p>
 
-Model checkpoints are available at:
+F2LLMs are fully open. Model checkpoints are available at:
 
 - [F2LLM 0.6B](https://huggingface.co/codefuse-ai/F2LLM-0.6B)
 - [F2LLM 1.7B](https://huggingface.co/codefuse-ai/F2LLM-1.7B)
