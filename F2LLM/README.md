@@ -41,3 +41,21 @@ accelerate launch --config_file configs/accelerate_config.yaml --num_machines N_
 where N_NODE is the number of machines; N_PROCESSES is N_NODE\*8; MASTER_IP is the IP address of your master node, and MASTER_PORT is a port available on your machine (e.g. 6379).
 
 On worker nodes, also run the above commmand but modify `machine_rank` accordingly.
+
+### Citation
+
+If you use the F2LLM models, data, or code, please cite the following technical report.
+
+```
+@article{2025F2LLM,
+  title={F2LLM Technical Report: Matching SOTA Embedding Performance with 6 Million Open-Source Data},
+  author={Ziyin Zhang and Zihan Liao and Hang Yu and Peng Di and Rui Wang},
+  journal      = {CoRR},
+  volume       = {abs/2510.02294},
+  year         = {2025},
+  url          = {https://doi.org/10.48550/arXiv.2510.02294},
+  doi          = {10.48550/ARXIV.2510.02294},
+  eprinttype    = {arXiv},
+  eprint       = {2510.02294}
+}
+```
