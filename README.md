@@ -7,4 +7,5 @@
 Embedding-related repos from CodeFuse, including:
 
 - [CGE](./CGE/README.md)
+- [D2LLM](https://github.com/codefuse-ai/D2LLM)
 - [F2LLM](./F2LLM/README.md)
