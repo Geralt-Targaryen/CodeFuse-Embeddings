@@ -9,3 +9,7 @@ Embedding-related repos from CodeFuse, including:
 - [CGE](./CGE/README.md)
 - [D2LLM](https://github.com/codefuse-ai/D2LLM)
 - [F2LLM](./F2LLM/README.md)
+
+**Star History**
+
+[![Star History Chart](https://api.star-history.com/svg?repos=codefuse-ai/CodeFuse-Embeddings&type=date&legend=top-left)](https://www.star-history.com/#codefuse-ai/CodeFuse-Embeddings&type=date&legend=top-left)
